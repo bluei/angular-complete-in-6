@@ -1,0 +1,54 @@
+<div>
+    <input [(ngModel)]="newAppointmentTitle" placeholder="Appt Description">
+    <input [(ngModel)]="newAppointmentDate" type="date" placeholder="Appt Date">
+    <button (click)="addAppointment()">Add</button>
+</div>
+
+<h2>Appointments</h2>
+<ul>
+    <li *ngFor="let appt of appointments; index as i">{{appt.title}} on {{appt.date}}
+        <button (click)="deleteAppointment(i)">Delete</button>
+    </li>
+</ul>
+
+<hr>
+<h3>Angular 17 approach
+</h3>
+<p>
+    <a href="https://blog.angular-university.io/angular-for/">Documentation on new for loop</a>
+</p>
+
+<table>
+    <tr>
+        <th>Index</th>
+        <th>Id</th>
+        <th>Title</th>
+        <th>First</th>
+        <th>Last</th>
+        <th>Odd</th>
+        <th>Even</th>
+        <th>Count</th>
+        <th>ACTIONS</th>
+    </tr>
+
+    @for (appt of appointments; track appt.id;
+    let index = $index,
+    first = $first, last = $last, count = $count,
+    odd = $odd, even = $even) {
+    <tr>
+        <td>{{index}}</td>
+        <td>{{appt.id}}</td>
+        <td>{{appt.title}}</td>
+        <td>{{first}}</td>
+        <td>{{last}}</td>
+        <td>{{odd}}</td>
+        <td>{{even}}</td>
+        <td>{{count}}</td>
+        <td><button (click)="deleteAppointment(appt.id)">Delete</button></td>
+    </tr>
+    } @empty {
+    <tr>
+        <td colspan="9" style="color: blue;">No appointments. Feel free to add one above.</td>
+    </tr>
+    }
+</table>
