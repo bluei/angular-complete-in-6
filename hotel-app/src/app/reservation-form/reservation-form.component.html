@@ -3,23 +3,33 @@
     <div>
         <label>Check-In Date:</label>
         <input type="date" formControlName="checkInDate">
+        <div *ngIf="reservationForm.get('checkInDate')?.invalid 
+            && reservationForm.get('checkInDate')?.touched">Check-In date is required</div>
     </div>
     <div>
         <label>Check-Out Date:</label>
         <input type="date" formControlName="checkOutDate">
+        <div *ngIf="reservationForm.get('checkOutDate')?.invalid 
+            && reservationForm.get('checkOutDate')?.touched">Check-Out date is required</div>
     </div>
     <div>
         <label>Guest Name:</label>
         <input type="text" formControlName="guestName">
+        <div *ngIf="reservationForm.get('guestName')?.invalid 
+            && reservationForm.get('guestName')?.touched">Guest Name is required</div>
     </div>
     <div>
         <label>Guest Email:</label>
         <input type="text" formControlName="guestEmail">
+        <div *ngIf="reservationForm.get('guestEmail')?.invalid 
+            && reservationForm.get('guestEmail')?.touched">Guest email is required</div>
     </div>
     <div>
         <label>Room Number:</label>
         <input type="number" formControlName="roomNumber">
+        <div *ngIf="reservationForm.get('roomNumber')?.invalid 
+            && reservationForm.get('roomNumber')?.touched">Room number is required</div>
     </div>
 
-    <button type="submit">Submit</button>
+    <button type="submit" [disabled]="reservationForm.invalid">Submit</button>
 </form>

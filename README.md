@@ -5,4 +5,5 @@ https://amd.udemy.com/course/complete-angular-14-course-learn-frontend-developme
 Instructors
 Denis Panjuta & Jannick Leismann
 
-Continue at 43 - Validating a form
+Continue at 46 - Create a reservation service
+Also in the typescript use the new injection process with @Inject.
