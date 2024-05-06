@@ -1,1 +1,19 @@
-<p>reservation-list works!</p>
+<app-home></app-home>
+
+<h2>Reservation list</h2>
+<ul>
+    @for (reservation of reservations; track reservation.id) {
+    <li>
+        Id: {{reservation.id}}<br>
+        Guest: {{reservation.guestName}} <br>
+        Email: {{reservation.guestEmail}}<br>
+        Room No: {{reservation.roomNumber}}<br>
+        Check-In: {{reservation.checkInDate}}<br>
+        Check-Out: {{reservation.checkOutDate}}<br>
+        <button (click)="deleteReservation(reservation.id)">Delete</button>
+        <button [routerLink]="['/edit', reservation.id]">Edit</button>
+    </li>
+    } @empty {
+    <p>No Reservations Available</p>
+    }
+</ul>
