@@ -1,19 +1,32 @@
 <app-home></app-home>
 
 <h2>Reservation list</h2>
-<ul>
-    @for (reservation of reservations; track reservation.id) {
-    <li>
-        Id: {{reservation.id}}<br>
-        Guest: {{reservation.guestName}} <br>
-        Email: {{reservation.guestEmail}}<br>
-        Room No: {{reservation.roomNumber}}<br>
-        Check-In: {{reservation.checkInDate}}<br>
-        Check-Out: {{reservation.checkOutDate}}<br>
-        <button (click)="deleteReservation(reservation.id)">Delete</button>
-        <button [routerLink]="['/edit', reservation.id]">Edit</button>
-    </li>
-    } @empty {
-    <p>No Reservations Available</p>
-    }
-</ul>
+
+<table class="table table-striped">
+    <thead>
+        <th>Guest Name</th>
+        <th>Email</th>
+        <th>Room No</th>
+        <th>Check-In</th>
+        <th>Check-Out</th>
+        <th>Actions</th>
+    </thead>
+    <tbody>
+        @for (reservation of reservations; track reservation.id) {
+        <tr>
+            <td>{{reservation.guestName}}</td>
+            <td>{{reservation.guestEmail}}</td>
+            <td>{{reservation.roomNumber}}</td>
+            <td>{{reservation.checkInDate}}</td>
+            <td>{{reservation.checkOutDate}}</td>
+            <td><button (click)="deleteReservation(reservation.id)" class="btn btn-sm btn-danger me-2">Delete</button>
+                <button [routerLink]="['/edit', reservation.id]" class="btn btn-sm btn-secondary">Edit</button>
+            </td>
+        </tr>
+        } @empty {
+                <tr>
+                    <td colspan=6>No Reservations Available</td>
+                </tr>
+            }
+    </tbody>
+</table>
