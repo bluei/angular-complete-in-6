@@ -13,11 +13,17 @@ export class ReservationListComponent implements OnInit {
   reservationService = inject(ReservationService);
 
   ngOnInit(): void {
-    this.reservations = this.reservationService.getReservations();
+    this.reservationService.getReservations().subscribe( reservations => {
+      this.reservations = reservations;
+    });
+    // Original way of using local storage
+    // this.reservations = this.reservationService.getReservations();
   }
 
   deleteReservation(id: string) {
-    this.reservationService.deleteReservation(id);
+    this.reservationService.deleteReservation(id).subscribe( () => {
+      console.log("The DELETE Reservation was Processed");
+    });
   }
 
 

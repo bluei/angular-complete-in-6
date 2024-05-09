@@ -1,0 +1,224 @@
+{
+  "uuid": "887f29ec-8638-4fee-b203-da91407e08de",
+  "lastMigration": 32,
+  "name": "Hotel app",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 3001,
+  "hostname": "",
+  "folders": [],
+  "routes": [
+    {
+      "uuid": "cc9cf37a-de27-4eed-89cf-b8484eaf4191",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "reservations",
+      "responses": [
+        {
+          "uuid": "2c034b80-a761-4f42-9a44-ba817233c8f5",
+          "body": "[\n{\n  \"id\": \"1\",\n  \"guestName\": \"Jimmy John\",\n  \"guestEmail\": \"jj@jjj.com\",\n  \"roomNumber\": 100,\n  \"checkInDate\": \"2024-05-20\",\n  \"checkOutDate\": \"2024-05-22\"\n},\n{\n  \"id\": \"2\",\n  \"guestName\": \"Yukki Amey\",\n  \"guestEmail\": \"ya@yep.com\",\n  \"roomNumber\": 101,\n  \"checkInDate\": \"2024-06-20\",\n  \"checkOutDate\": \"2024-06-22\"\n}\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    },
+    {
+      "uuid": "d56c8f96-0026-4374-a9a7-e050121afe15",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "reservation/:id",
+      "responses": [
+        {
+          "uuid": "0d4bcc91-d2c0-4a08-95ba-b348fe361f29",
+          "body": "{\n  \"id\": \"1\",\n  \"guestName\": \"Jimmy John\",\n  \"guestEmail\": \"jj@jjj.com\",\n  \"roomNumber\": 100,\n  \"checkInDate\": \"2024-05-20\",\n  \"checkOutDate\": \"2024-05-22\"\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    },
+    {
+      "uuid": "b4059e6f-2096-41d0-896b-42d241cdc36a",
+      "type": "http",
+      "documentation": "",
+      "method": "delete",
+      "endpoint": "reservation/:id",
+      "responses": [
+        {
+          "uuid": "d977b68c-97d2-4fa6-980c-5ac20455448c",
+          "body": "",
+          "latency": 0,
+          "statusCode": 204,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    },
+    {
+      "uuid": "16786658-8f3f-41dd-89d2-b0b34ae6e12d",
+      "type": "http",
+      "documentation": "",
+      "method": "put",
+      "endpoint": "reservation/:id",
+      "responses": [
+        {
+          "uuid": "be44eccb-3e87-4eb1-a016-0d8a25d7181a",
+          "body": "{\n  \"id\": \"1\",\n  \"guestName\": \"Jimmy John\",\n  \"guestEmail\": \"jj@jjj.com\",\n  \"roomNumber\": 100,\n  \"checkInDate\": \"2024-05-20\",\n  \"checkOutDate\": \"2024-05-22\"\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    },
+    {
+      "uuid": "5708c804-fde3-45c1-87b2-bd08bf3a88c1",
+      "type": "http",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "reservation",
+      "responses": [
+        {
+          "uuid": "ec9c5f59-ddf2-4e73-9d2c-7a996f151730",
+          "body": "{\n  \"id\": \"1\",\n  \"guestName\": \"Jimmy John\",\n  \"guestEmail\": \"jj@jjj.com\",\n  \"roomNumber\": 100,\n  \"checkInDate\": \"2024-05-20\",\n  \"checkOutDate\": \"2024-05-22\"\n}",
+          "latency": 0,
+          "statusCode": 201,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    }
+  ],
+  "rootChildren": [
+    {
+      "type": "route",
+      "uuid": "cc9cf37a-de27-4eed-89cf-b8484eaf4191"
+    },
+    {
+      "type": "route",
+      "uuid": "d56c8f96-0026-4374-a9a7-e050121afe15"
+    },
+    {
+      "type": "route",
+      "uuid": "b4059e6f-2096-41d0-896b-42d241cdc36a"
+    },
+    {
+      "type": "route",
+      "uuid": "16786658-8f3f-41dd-89d2-b0b34ae6e12d"
+    },
+    {
+      "type": "route",
+      "uuid": "5708c804-fde3-45c1-87b2-bd08bf3a88c1"
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    },
+    {
+      "key": "Access-Control-Allow-Origin",
+      "value": "*"
+    },
+    {
+      "key": "Access-Control-Allow-Methods",
+      "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+    },
+    {
+      "key": "Access-Control-Allow-Headers",
+      "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "data": [],
+  "callbacks": []
+}

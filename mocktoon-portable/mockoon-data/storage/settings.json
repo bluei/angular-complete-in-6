@@ -1,0 +1,41 @@
+{
+  "welcomeShown": true,
+  "bannerDismissed": [],
+  "logSizeLimit": 10000,
+  "maxLogsPerEnvironment": 50,
+  "truncateRouteName": true,
+  "mainMenuSize": 143,
+  "secondaryMenuSize": 307,
+  "fakerLocale": "en",
+  "fakerSeed": null,
+  "lastChangelog": "8.0.0",
+  "environments": [
+    {
+      "uuid": "c092c438-1836-4494-b9d7-b6dd02126f2f",
+      "path": "C:\\git\\01 angular-complete-in-6\\mocktoon-portable\\mockoon-data\\storage\\demo.json",
+      "cloud": false,
+      "lastServerHash": null
+    },
+    {
+      "uuid": "887f29ec-8638-4fee-b203-da91407e08de",
+      "path": "C:\\git\\01 angular-complete-in-6\\hotel-app\\mocktoon\\hotel-app.json"
+    }
+  ],
+  "disabledRoutes": {},
+  "collapsedFolders": {},
+  "enableTelemetry": true,
+  "storagePrettyPrint": true,
+  "fileWatcherEnabled": "disabled",
+  "dialogWorkingDir": "C:\\git\\01 angular-complete-in-6\\hotel-app\\mocktoon",
+  "startEnvironmentsOnLoad": false,
+  "logTransactions": false,
+  "environmentsCategoriesOrder": [
+    "local",
+    "cloud"
+  ],
+  "environmentsCategoriesCollapsed": {
+    "local": false,
+    "cloud": false
+  },
+  "envVarsPrefix": "MOCKOON_"
+}
