@@ -18,7 +18,9 @@
     },
     {
       "uuid": "887f29ec-8638-4fee-b203-da91407e08de",
-      "path": "C:\\git\\01 angular-complete-in-6\\hotel-app\\mocktoon\\hotel-app.json"
+      "path": "C:\\git\\01 angular-complete-in-6\\hotel-app\\mocktoon\\hotel-app.json",
+      "cloud": false,
+      "lastServerHash": null
     }
   ],
   "disabledRoutes": {},

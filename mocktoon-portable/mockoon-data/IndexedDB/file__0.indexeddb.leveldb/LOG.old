@@ -1,0 +1,6 @@
+2024/05/09-08:51:36.819 1ac8 Creating DB C:\git\01 angular-complete-in-6\mocktoon-portable\mockoon-data\IndexedDB\file__0.indexeddb.leveldb since it was missing.
+2024/05/09-08:51:36.825 1ac8 Reusing MANIFEST C:\git\01 angular-complete-in-6\mocktoon-portable\mockoon-data\IndexedDB\file__0.indexeddb.leveldb/MANIFEST-000001
+2024/05/09-08:51:36.891 71b4 Level-0 table #5: started
+2024/05/09-08:51:36.894 71b4 Level-0 table #5: 1289 bytes OK
+2024/05/09-08:51:36.896 71b4 Delete type=0 #3
+2024/05/09-08:51:36.897 44c0 Manual compaction at level-0 from '\x00\x01\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x02\x00\x00\x00' @ 0 : 0; will stop at (end)

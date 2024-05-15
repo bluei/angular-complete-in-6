@@ -1,2 +1,3 @@
-2024/05/09-08:51:36.827 44c0 Creating DB C:\git\01 angular-complete-in-6\mocktoon-portable\mockoon-data\Session Storage since it was missing.
-2024/05/09-08:51:36.834 44c0 Reusing MANIFEST C:\git\01 angular-complete-in-6\mocktoon-portable\mockoon-data\Session Storage/MANIFEST-000001
+2024/05/11-07:00:19.426 597c Reusing MANIFEST C:\git\01 angular-complete-in-6\mocktoon-portable\mockoon-data\Session Storage/MANIFEST-000001
+2024/05/11-07:00:19.427 597c Recovering log #3
+2024/05/11-07:00:19.427 597c Reusing old log C:\git\01 angular-complete-in-6\mocktoon-portable\mockoon-data\Session Storage/000003.log 
